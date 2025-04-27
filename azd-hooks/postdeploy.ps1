@@ -47,9 +47,9 @@ Write-Host "Configuring Database Schema..."
 # ##############################################################################
 # Install Required Azure CLI Extensions
 # ##############################################################################
-az config set extension.use_dynamic_install=yes_without_prompt
-az config set extension.dynamic_install_allow_preview=true
-az extension add -y -n "rdbms-connect"
+    az config set extension.use_dynamic_install=yes_without_prompt
+    az config set extension.dynamic_install_allow_preview=true
+    az extension add -y -n "rdbms-connect"
 
 az postgres flexible-server execute `
           --admin-user "$username" `
